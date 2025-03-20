@@ -22,6 +22,6 @@ RUN useradd -r -u 1001 -m -s /bin/bash webuser
 USER webuser
 
 # Expose port and run httpd
-EXPOSE 80
+EXPOSE 80 443
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
